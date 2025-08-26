@@ -1,0 +1,35 @@
+{
+  "name": "founders-search",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "parse-episodes": "npx ts-node scripts/parse_episodes_nodejs.ts",
+    "parse-episode-text": "npx ts-node scripts/parse_episode_text_nodejs.ts",
+    "clean-text": "npx ts-node scripts/clean_podcast_text.ts",
+    "extract-entities": "npx ts-node scripts/extract_entities_ai.ts",
+    "extract-graph": "npx ts-node scripts/comprehensive-graph-extraction.ts",
+    "scrape-and-process": "npx ts-node scripts/scrape-and-process-episodes.ts",
+    "clean-existing-text": "npx ts-node scripts/clean-existing-text.ts",
+    "extract-entities-graph": "npx ts-node scripts/extract-entities-graph.ts",
+    "add-episode-ids": "npx ts-node scripts/add-episode-ids.ts",
+    "search-data": "npx ts-node scripts/search-podcast-data.ts",
+    "reprocess-gemini-15pro": "npx ts-node scripts/reprocess-gemini-15pro.ts"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.12"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.12"
+  }
+}

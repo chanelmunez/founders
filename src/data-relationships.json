@@ -1,0 +1,170 @@
+{
+  "relationships": [
+    {
+      "id": "rel_person_tamaramellon_ep_389_7_product_jimmychoo_ep_389_7_28065d5a",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "product_jimmychoo_ep_389_7",
+      "entity2_name": "Jimmy Choo",
+      "relationship_type": "founded",
+      "description": "Tamara Mellon founded the Jimmy Choo brand, playing a crucial role in its growth into a billion-dollar company.  She was instrumental in shaping the brand's identity and driving its success.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_jimmychoothecobbler_ep_389_7_person_tamaramellon_ep_389_7_4f5f20b0",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "person_jimmychoothecobbler_ep_389_7",
+      "entity2_name": "Jimmy Choo (the cobbler)",
+      "relationship_type": "partnered_with",
+      "description": "Tamara Mellon partnered with Jimmy Choo, the cobbler, to establish the Jimmy Choo brand. This partnership combined Mellon's business acumen with Choo's shoemaking expertise.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_inmyshoesamemoir_ep_389_7_person_tamaramellon_ep_389_7_1046a9c6",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_inmyshoesamemoir_ep_389_7",
+      "entity2_name": "In My Shoes: A Memoir",
+      "relationship_type": "wrote_book",
+      "description": "Tamara Mellon wrote the memoir \"In My Shoes\", which details her life and career, including the founding and growth of Jimmy Choo.",
+      "confidence_score": 0.98,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_vogue_ep_389_7_person_tamaramellon_ep_389_7_c7372e00",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_vogue_ep_389_7",
+      "entity2_name": "Vogue",
+      "relationship_type": "featured_in",
+      "description": "Tamara Mellon's wedding was photographed by Vogue, highlighting her connection to the fashion world and her public profile.",
+      "confidence_score": 0.8,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_vanityfair_ep_389_7_person_tamaramellon_ep_389_7_21611472",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_vanityfair_ep_389_7",
+      "entity2_name": "Vanity Fair",
+      "relationship_type": "featured_in",
+      "description": "Vanity Fair covered Tamara Mellon's divorce and subsequent criminal trial, showcasing the public interest in her life and career.",
+      "confidence_score": 0.75,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_thewallstreetjournal_ep_389_7_person_tamaramellon_ep_389_7_b7e45b8e",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_thewallstreetjournal_ep_389_7",
+      "entity2_name": "The Wall Street Journal",
+      "relationship_type": "featured_in",
+      "description": "The Wall Street Journal reported on Tamara Mellon's business battles and takeover attempts, highlighting the business challenges she faced.",
+      "confidence_score": 0.7,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_jeffbezos_ep_388_f_place_amazon_ep_388_f_b7f036e9",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "place_amazon_ep_388_f",
+      "entity2_name": "Amazon",
+      "relationship_type": "founded",
+      "description": "Jeff Bezos founded the multinational technology company Amazon.",
+      "confidence_score": 0.99,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_shareholderletters_ep_388_f_person_jeffbezos_ep_388_f_a4bedb8d",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "media_shareholderletters_ep_388_f",
+      "entity2_name": "Shareholder Letters",
+      "relationship_type": "wrote_book",
+      "description": "Jeff Bezos wrote the shareholder letters that are compiled in the book 'Invent and Wander'.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f_person_jeffbezos_ep_388_f_8cd8f61f",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+      "entity2_name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+      "relationship_type": "featured_in",
+      "description": "Jeff Bezos's writings are featured in the book 'Invent and Wander'.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_shareholderletters_ep_388_f_place_amazon_ep_388_f_9c88bfae",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "media_shareholderletters_ep_388_f",
+      "entity1_name": "Shareholder Letters",
+      "entity2_id": "place_amazon_ep_388_f",
+      "entity2_name": "Amazon",
+      "relationship_type": "created_by",
+      "description": "The shareholder letters were created by Amazon and written by Jeff Bezos.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561_person_patrickoshaughnessy_ep_17561_50dacf60",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "entity1_id": "person_patrickoshaughnessy_ep_17561",
+      "entity1_name": "Patrick O’Shaughnessy",
+      "entity2_id": "media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561",
+      "entity2_name": "Episode #383 \"Todd Graves and his $10 Billion Chicken Finger Dream\"",
+      "relationship_type": "listened_to",
+      "description": "Patrick O'Shaughnessy listened to the episode featuring Todd Graves, which inspired the current conversation.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_toddgraves_ep_17561_place_raisingcanes_ep_17561_ea72b79a",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "entity1_id": "person_toddgraves_ep_17561",
+      "entity1_name": "Todd Graves",
+      "entity2_id": "place_raisingcanes_ep_17561",
+      "entity2_name": "Raising Cane's",
+      "relationship_type": "founded",
+      "description": "Todd Graves is the founder of Raising Cane's Chicken Fingers.",
+      "confidence_score": 0.8,
+      "is_cross_episode": false
+    }
+  ],
+  "cross_episode_relationships": [
+    {
+      "id": "cross_ep_388_f0429693_ep_1756141094027_7dafd184",
+      "episode1_id": "ep_388_f0429693",
+      "episode1_title": "#388 Jeff Bezos's Shareholder Letters: All of Them!",
+      "episode2_id": "ep_1756141094027_7dafd184",
+      "episode2_title": "A conversation on focus and finding your life's work",
+      "shared_entities": [
+        "Ramp"
+      ],
+      "relationship_strength": 0.5,
+      "common_themes": [
+        "Product Development"
+      ]
+    }
+  ],
+  "metadata": {
+    "extracted_by": "gemini",
+    "extracted_at": "2025-08-25T18:18:05.154Z",
+    "total_relationships": 12,
+    "cross_episode_relationships": 1
+  }
+}

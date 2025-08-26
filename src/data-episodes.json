@@ -1,0 +1,964 @@
+{
+  "episodes": [
+    {
+      "episode_id": "ep_389_77fb2124",
+      "episode_title": "#389 The Founder of Jimmy Choo: Tamara Mellon",
+      "episode_number": 389,
+      "date": "2025-05-25T05:00:00.000Z",
+      "url": "https://www.founderspodcast.com/episodes/389-the-founder-of-jimmy-choo-tamara-mellon",
+      "entities": [
+        {
+          "id": "person_tamaramellon_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Tamara Mellon",
+          "type": "person",
+          "context": "Tamara Mellon is the founder of the billion-dollar Jimmy Choo brand.  The podcast episode discusses her life story, from a troubled childhood and battles with mental health issues to building a successful fashion empire.  The narrative highlights her struggles with business partners, a hostile takeover attempt, and personal challenges like a turbulent marriage and family conflicts.  Her journey is presented as a testament to overcoming adversity and achieving entrepreneurial success in the fashion industry.",
+          "amazon_searchable": false,
+          "confidence_score": 0.95
+        },
+        {
+          "id": "product_jimmychoo_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Jimmy Choo",
+          "type": "product",
+          "context": "Jimmy Choo is a high-end shoe company founded by Tamara Mellon. It grew into a billion-dollar brand, known for its stylish and luxurious footwear. The brand's shoes were featured prominently in Sex and the City, further boosting its popularity and global recognition.  The podcast episode details Mellon's role in building the brand and the challenges she faced in the process.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Jimmy Choo shoes",
+            "Jimmy Choo heels",
+            "Jimmy Choo boots",
+            "Jimmy Choo handbags"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "id": "media_inmyshoesamemoir_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "In My Shoes: A Memoir",
+          "type": "media",
+          "context": "This is Tamara Mellon's memoir, which details her life story, including her experiences founding Jimmy Choo and the challenges she faced along the way. The podcast episode is based on this book, summarizing its key events and insights. The book offers a personal account of her entrepreneurial journey, personal struggles, and business dealings.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "In My Shoes Tamara Mellon",
+            "Tamara Mellon Memoir",
+            "In My Shoes book",
+            "Tamara Mellon autobiography"
+          ],
+          "confidence_score": 0.85
+        },
+        {
+          "id": "media_vogue_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Vogue",
+          "type": "media",
+          "context": "Vogue is a fashion magazine that photographed Tamara Mellon's wedding, showcasing her personal life and connection to the fashion world.  This highlights her status and influence within the industry.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Vogue magazine",
+            "Vogue subscription",
+            "Vogue back issues"
+          ],
+          "confidence_score": 0.8
+        },
+        {
+          "id": "media_vanityfair_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Vanity Fair",
+          "type": "media",
+          "context": "Vanity Fair is a magazine that covered Tamara Mellon's divorce and subsequent criminal trial, demonstrating the public interest in her life and the high-profile nature of her experiences.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Vanity Fair magazine",
+            "Vanity Fair subscription"
+          ],
+          "confidence_score": 0.75
+        },
+        {
+          "id": "media_thewallstreetjournal_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "The Wall Street Journal",
+          "type": "media",
+          "context": "The Wall Street Journal reported on Tamara Mellon's battles with business conflicts and a hostile takeover attempt, highlighting the business aspects of her story and the challenges she faced in the corporate world.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Wall Street Journal subscription",
+            "WSJ digital access"
+          ],
+          "confidence_score": 0.7
+        },
+        {
+          "id": "media_sexandthecity_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Sex and the City",
+          "type": "media",
+          "context": "Jimmy Choo shoes were featured in Sex and the City, a popular TV show, significantly contributing to the brand's recognition and success. This illustrates the power of product placement and media exposure in building a brand.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Sex and the City DVD",
+            "Sex and the City Blu-ray",
+            "Sex and the City streaming"
+          ],
+          "confidence_score": 0.8
+        },
+        {
+          "id": "person_jimmychoothecobbler_ep_389_7",
+          "episode_id": "ep_389_77fb2124",
+          "name": "Jimmy Choo (the cobbler)",
+          "type": "person",
+          "context": "Jimmy Choo was the cobbler who partnered with Tamara Mellon to create the Jimmy Choo brand.  The podcast highlights the collaborative nature of the brand's creation and the importance of the partnership in its early success.",
+          "amazon_searchable": false,
+          "confidence_score": 0.78
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel_person_tamaramellon_ep_389_7_product_jimmychoo_ep_389_7_28065d5a",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "product_jimmychoo_ep_389_7",
+          "entity2_name": "Jimmy Choo",
+          "relationship_type": "founded",
+          "description": "Tamara Mellon founded the Jimmy Choo brand, playing a crucial role in its growth into a billion-dollar company.  She was instrumental in shaping the brand's identity and driving its success.",
+          "confidence_score": 0.95,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_person_jimmychoothecobbler_ep_389_7_person_tamaramellon_ep_389_7_4f5f20b0",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "person_jimmychoothecobbler_ep_389_7",
+          "entity2_name": "Jimmy Choo (the cobbler)",
+          "relationship_type": "partnered_with",
+          "description": "Tamara Mellon partnered with Jimmy Choo, the cobbler, to establish the Jimmy Choo brand. This partnership combined Mellon's business acumen with Choo's shoemaking expertise.",
+          "confidence_score": 0.9,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_inmyshoesamemoir_ep_389_7_person_tamaramellon_ep_389_7_1046a9c6",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "media_inmyshoesamemoir_ep_389_7",
+          "entity2_name": "In My Shoes: A Memoir",
+          "relationship_type": "wrote_book",
+          "description": "Tamara Mellon wrote the memoir \"In My Shoes\", which details her life and career, including the founding and growth of Jimmy Choo.",
+          "confidence_score": 0.98,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_vogue_ep_389_7_person_tamaramellon_ep_389_7_c7372e00",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "media_vogue_ep_389_7",
+          "entity2_name": "Vogue",
+          "relationship_type": "featured_in",
+          "description": "Tamara Mellon's wedding was photographed by Vogue, highlighting her connection to the fashion world and her public profile.",
+          "confidence_score": 0.8,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_vanityfair_ep_389_7_person_tamaramellon_ep_389_7_21611472",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "media_vanityfair_ep_389_7",
+          "entity2_name": "Vanity Fair",
+          "relationship_type": "featured_in",
+          "description": "Vanity Fair covered Tamara Mellon's divorce and subsequent criminal trial, showcasing the public interest in her life and career.",
+          "confidence_score": 0.75,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_thewallstreetjournal_ep_389_7_person_tamaramellon_ep_389_7_b7e45b8e",
+          "episode_id": "ep_389_77fb2124",
+          "entity1_id": "person_tamaramellon_ep_389_7",
+          "entity1_name": "Tamara Mellon",
+          "entity2_id": "media_thewallstreetjournal_ep_389_7",
+          "entity2_name": "The Wall Street Journal",
+          "relationship_type": "featured_in",
+          "description": "The Wall Street Journal reported on Tamara Mellon's business battles and takeover attempts, highlighting the business challenges she faced.",
+          "confidence_score": 0.7,
+          "is_cross_episode": false
+        }
+      ],
+      "extracted_by": "gemini",
+      "extracted_at": "2025-08-25T18:16:49.799Z"
+    },
+    {
+      "episode_id": "ep_388_f0429693",
+      "episode_title": "#388 Jeff Bezos's Shareholder Letters: All of Them!",
+      "episode_number": 388,
+      "date": "2025-05-15T05:00:00.000Z",
+      "url": "https://www.founderspodcast.com/episodes/388-jeff-bezoss-shareholder-letters-all-of-them",
+      "entities": [
+        {
+          "id": "person_jeffbezos_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Jeff Bezos",
+          "type": "person",
+          "context": "Founder and former CEO of Amazon.  The episode focuses on analyzing his shareholder letters as a masterclass in building a high-growth internet business. His leadership principles and business strategies are discussed extensively.",
+          "amazon_searchable": false,
+          "confidence_score": 0.95
+        },
+        {
+          "id": "place_amazon_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Amazon",
+          "type": "place",
+          "context": "A multinational technology company founded by Jeff Bezos. The episode centers around Bezos's shareholder letters, which are available on Amazon's website.  Amazon's business practices and success are analyzed through the lens of these letters.",
+          "amazon_searchable": false,
+          "confidence_score": 0.98
+        },
+        {
+          "id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+          "type": "media",
+          "context": "A book compiling Jeff Bezos's shareholder letters.  The podcast episode recommends reading these letters as a way to learn about building a successful internet business. The book is mentioned as a resource for listeners.",
+          "amazon_searchable": true,
+          "amazon_keywords": [
+            "Invent and Wander",
+            "Jeff Bezos book",
+            "Bezos shareholder letters",
+            "Amazon leadership"
+          ],
+          "confidence_score": 0.9
+        },
+        {
+          "id": "media_shareholderletters_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Shareholder Letters",
+          "type": "media",
+          "context": "Annual letters written by Jeff Bezos to Amazon shareholders.  These letters are the central focus of the podcast episode, providing insights into Bezos's business philosophy and strategies for building a successful company.",
+          "amazon_searchable": false,
+          "confidence_score": 0.85
+        },
+        {
+          "id": "product_ramp_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Ramp",
+          "type": "product",
+          "context": "A financial operations platform mentioned in the episode's advertisement.  It's described as a tool to control spending, watch costs, and optimize financial operations.",
+          "amazon_searchable": false,
+          "confidence_score": 0.75
+        },
+        {
+          "id": "object_customerobsession_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Customer Obsession",
+          "type": "object",
+          "context": "A business strategy emphasized in Bezos's shareholder letters and highlighted in the podcast. It refers to prioritizing customer needs and satisfaction above all else.",
+          "amazon_searchable": false,
+          "confidence_score": 0.8
+        },
+        {
+          "id": "object_longtermorientation_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Long-Term Orientation",
+          "type": "object",
+          "context": "A business philosophy discussed in the episode, emphasizing the importance of focusing on long-term growth and value creation rather than short-term gains.",
+          "amazon_searchable": false,
+          "confidence_score": 0.78
+        },
+        {
+          "id": "object_invention_ep_388_f",
+          "episode_id": "ep_388_f0429693",
+          "name": "Invention",
+          "type": "object",
+          "context": "A key element of Bezos's business philosophy, highlighting the importance of continuous innovation and creating new products and services.",
+          "amazon_searchable": false,
+          "confidence_score": 0.82
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel_person_jeffbezos_ep_388_f_place_amazon_ep_388_f_b7f036e9",
+          "episode_id": "ep_388_f0429693",
+          "entity1_id": "person_jeffbezos_ep_388_f",
+          "entity1_name": "Jeff Bezos",
+          "entity2_id": "place_amazon_ep_388_f",
+          "entity2_name": "Amazon",
+          "relationship_type": "founded",
+          "description": "Jeff Bezos founded the multinational technology company Amazon.",
+          "confidence_score": 0.99,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_shareholderletters_ep_388_f_person_jeffbezos_ep_388_f_a4bedb8d",
+          "episode_id": "ep_388_f0429693",
+          "entity1_id": "person_jeffbezos_ep_388_f",
+          "entity1_name": "Jeff Bezos",
+          "entity2_id": "media_shareholderletters_ep_388_f",
+          "entity2_name": "Shareholder Letters",
+          "relationship_type": "wrote_book",
+          "description": "Jeff Bezos wrote the shareholder letters that are compiled in the book 'Invent and Wander'.",
+          "confidence_score": 0.95,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f_person_jeffbezos_ep_388_f_8cd8f61f",
+          "episode_id": "ep_388_f0429693",
+          "entity1_id": "person_jeffbezos_ep_388_f",
+          "entity1_name": "Jeff Bezos",
+          "entity2_id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+          "entity2_name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+          "relationship_type": "featured_in",
+          "description": "Jeff Bezos's writings are featured in the book 'Invent and Wander'.",
+          "confidence_score": 0.9,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_media_shareholderletters_ep_388_f_place_amazon_ep_388_f_9c88bfae",
+          "episode_id": "ep_388_f0429693",
+          "entity1_id": "media_shareholderletters_ep_388_f",
+          "entity1_name": "Shareholder Letters",
+          "entity2_id": "place_amazon_ep_388_f",
+          "entity2_name": "Amazon",
+          "relationship_type": "created_by",
+          "description": "The shareholder letters were created by Amazon and written by Jeff Bezos.",
+          "confidence_score": 0.9,
+          "is_cross_episode": false
+        }
+      ],
+      "extracted_by": "gemini",
+      "extracted_at": "2025-08-25T18:17:27.679Z"
+    },
+    {
+      "episode_id": "ep_1756141094027_7dafd184",
+      "episode_title": "A conversation on focus and finding your life's work",
+      "date": "2025-05-08T05:00:00.000Z",
+      "url": "https://www.founderspodcast.com/episodes/on-focus",
+      "entities": [
+        {
+          "id": "person_patrickoshaughnessy_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Patrick O’Shaughnessy",
+          "type": "person",
+          "context": "Patrick O’Shaughnessy is a friend of the podcast host and invited the host to New York to record a conversation about focus and finding one's life's work.  He had recently listened to an episode featuring Todd Graves and was inspired to discuss the topic further.",
+          "amazon_searchable": false,
+          "confidence_score": 0.9
+        },
+        {
+          "id": "person_toddgraves_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Todd Graves",
+          "type": "person",
+          "context": "Todd Graves is mentioned as the subject of a previous podcast episode (\"#383 Todd Graves and his $10 Billion Chicken Finger Dream\") which inspired a conversation about focus and life's work.",
+          "amazon_searchable": false,
+          "confidence_score": 0.8
+        },
+        {
+          "id": "place_raisingcanes_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Raising Cane's",
+          "type": "place",
+          "context": "While not explicitly named, the context strongly implies that Todd Graves's \"$10 Billion Chicken Finger Dream\" refers to his company, Raising Cane's Chicken Fingers, a successful fast-food chain.",
+          "amazon_searchable": false,
+          "confidence_score": 0.75
+        },
+        {
+          "id": "media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Episode #383 \"Todd Graves and his $10 Billion Chicken Finger Dream\"",
+          "type": "media",
+          "context": "This is a previous podcast episode that served as inspiration for the current conversation. It features Todd Graves and his business journey.",
+          "amazon_searchable": false,
+          "confidence_score": 0.95
+        },
+        {
+          "id": "place_newyork_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "New York",
+          "type": "place",
+          "context": "The location where the podcast conversation was recorded.",
+          "amazon_searchable": false,
+          "confidence_score": 1
+        },
+        {
+          "id": "product_spotify_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Spotify",
+          "type": "product",
+          "context": "The podcast episode is available to watch on Spotify.",
+          "amazon_searchable": false,
+          "confidence_score": 0.9
+        },
+        {
+          "id": "product_youtube_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "YouTube",
+          "type": "product",
+          "context": "The podcast episode is available to watch on YouTube.",
+          "amazon_searchable": false,
+          "confidence_score": 0.9
+        },
+        {
+          "id": "product_ramp_ep_17561",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "name": "Ramp",
+          "type": "product",
+          "context": "Ramp is a financial operations platform mentioned in the podcast advertisement. It helps businesses control spending and optimize financial operations.",
+          "amazon_searchable": false,
+          "confidence_score": 0.8
+        }
+      ],
+      "relationships": [
+        {
+          "id": "rel_media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561_person_patrickoshaughnessy_ep_17561_50dacf60",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "entity1_id": "person_patrickoshaughnessy_ep_17561",
+          "entity1_name": "Patrick O’Shaughnessy",
+          "entity2_id": "media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561",
+          "entity2_name": "Episode #383 \"Todd Graves and his $10 Billion Chicken Finger Dream\"",
+          "relationship_type": "listened_to",
+          "description": "Patrick O'Shaughnessy listened to the episode featuring Todd Graves, which inspired the current conversation.",
+          "confidence_score": 0.95,
+          "is_cross_episode": false
+        },
+        {
+          "id": "rel_person_toddgraves_ep_17561_place_raisingcanes_ep_17561_ea72b79a",
+          "episode_id": "ep_1756141094027_7dafd184",
+          "entity1_id": "person_toddgraves_ep_17561",
+          "entity1_name": "Todd Graves",
+          "entity2_id": "place_raisingcanes_ep_17561",
+          "entity2_name": "Raising Cane's",
+          "relationship_type": "founded",
+          "description": "Todd Graves is the founder of Raising Cane's Chicken Fingers.",
+          "confidence_score": 0.8,
+          "is_cross_episode": false
+        }
+      ],
+      "extracted_by": "gemini",
+      "extracted_at": "2025-08-25T18:17:44.949Z"
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "person_tamaramellon_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Tamara Mellon",
+      "type": "person",
+      "context": "Tamara Mellon is the founder of the billion-dollar Jimmy Choo brand.  The podcast episode discusses her life story, from a troubled childhood and battles with mental health issues to building a successful fashion empire.  The narrative highlights her struggles with business partners, a hostile takeover attempt, and personal challenges like a turbulent marriage and family conflicts.  Her journey is presented as a testament to overcoming adversity and achieving entrepreneurial success in the fashion industry.",
+      "amazon_searchable": false,
+      "confidence_score": 0.95
+    },
+    {
+      "id": "product_jimmychoo_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Jimmy Choo",
+      "type": "product",
+      "context": "Jimmy Choo is a high-end shoe company founded by Tamara Mellon. It grew into a billion-dollar brand, known for its stylish and luxurious footwear. The brand's shoes were featured prominently in Sex and the City, further boosting its popularity and global recognition.  The podcast episode details Mellon's role in building the brand and the challenges she faced in the process.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Jimmy Choo shoes",
+        "Jimmy Choo heels",
+        "Jimmy Choo boots",
+        "Jimmy Choo handbags"
+      ],
+      "confidence_score": 0.9
+    },
+    {
+      "id": "media_inmyshoesamemoir_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "In My Shoes: A Memoir",
+      "type": "media",
+      "context": "This is Tamara Mellon's memoir, which details her life story, including her experiences founding Jimmy Choo and the challenges she faced along the way. The podcast episode is based on this book, summarizing its key events and insights. The book offers a personal account of her entrepreneurial journey, personal struggles, and business dealings.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "In My Shoes Tamara Mellon",
+        "Tamara Mellon Memoir",
+        "In My Shoes book",
+        "Tamara Mellon autobiography"
+      ],
+      "confidence_score": 0.85
+    },
+    {
+      "id": "media_vogue_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Vogue",
+      "type": "media",
+      "context": "Vogue is a fashion magazine that photographed Tamara Mellon's wedding, showcasing her personal life and connection to the fashion world.  This highlights her status and influence within the industry.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Vogue magazine",
+        "Vogue subscription",
+        "Vogue back issues"
+      ],
+      "confidence_score": 0.8
+    },
+    {
+      "id": "media_vanityfair_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Vanity Fair",
+      "type": "media",
+      "context": "Vanity Fair is a magazine that covered Tamara Mellon's divorce and subsequent criminal trial, demonstrating the public interest in her life and the high-profile nature of her experiences.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Vanity Fair magazine",
+        "Vanity Fair subscription"
+      ],
+      "confidence_score": 0.75
+    },
+    {
+      "id": "media_thewallstreetjournal_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "The Wall Street Journal",
+      "type": "media",
+      "context": "The Wall Street Journal reported on Tamara Mellon's battles with business conflicts and a hostile takeover attempt, highlighting the business aspects of her story and the challenges she faced in the corporate world.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Wall Street Journal subscription",
+        "WSJ digital access"
+      ],
+      "confidence_score": 0.7
+    },
+    {
+      "id": "media_sexandthecity_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Sex and the City",
+      "type": "media",
+      "context": "Jimmy Choo shoes were featured in Sex and the City, a popular TV show, significantly contributing to the brand's recognition and success. This illustrates the power of product placement and media exposure in building a brand.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Sex and the City DVD",
+        "Sex and the City Blu-ray",
+        "Sex and the City streaming"
+      ],
+      "confidence_score": 0.8
+    },
+    {
+      "id": "person_jimmychoothecobbler_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Jimmy Choo (the cobbler)",
+      "type": "person",
+      "context": "Jimmy Choo was the cobbler who partnered with Tamara Mellon to create the Jimmy Choo brand.  The podcast highlights the collaborative nature of the brand's creation and the importance of the partnership in its early success.",
+      "amazon_searchable": false,
+      "confidence_score": 0.78
+    },
+    {
+      "id": "person_jeffbezos_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Jeff Bezos",
+      "type": "person",
+      "context": "Founder and former CEO of Amazon.  The episode focuses on analyzing his shareholder letters as a masterclass in building a high-growth internet business. His leadership principles and business strategies are discussed extensively.",
+      "amazon_searchable": false,
+      "confidence_score": 0.95
+    },
+    {
+      "id": "place_amazon_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Amazon",
+      "type": "place",
+      "context": "A multinational technology company founded by Jeff Bezos. The episode centers around Bezos's shareholder letters, which are available on Amazon's website.  Amazon's business practices and success are analyzed through the lens of these letters.",
+      "amazon_searchable": false,
+      "confidence_score": 0.98
+    },
+    {
+      "id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+      "type": "media",
+      "context": "A book compiling Jeff Bezos's shareholder letters.  The podcast episode recommends reading these letters as a way to learn about building a successful internet business. The book is mentioned as a resource for listeners.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Invent and Wander",
+        "Jeff Bezos book",
+        "Bezos shareholder letters",
+        "Amazon leadership"
+      ],
+      "confidence_score": 0.9
+    },
+    {
+      "id": "media_shareholderletters_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Shareholder Letters",
+      "type": "media",
+      "context": "Annual letters written by Jeff Bezos to Amazon shareholders.  These letters are the central focus of the podcast episode, providing insights into Bezos's business philosophy and strategies for building a successful company.",
+      "amazon_searchable": false,
+      "confidence_score": 0.85
+    },
+    {
+      "id": "product_ramp_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Ramp",
+      "type": "product",
+      "context": "A financial operations platform mentioned in the episode's advertisement.  It's described as a tool to control spending, watch costs, and optimize financial operations.",
+      "amazon_searchable": false,
+      "confidence_score": 0.75
+    },
+    {
+      "id": "object_customerobsession_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Customer Obsession",
+      "type": "object",
+      "context": "A business strategy emphasized in Bezos's shareholder letters and highlighted in the podcast. It refers to prioritizing customer needs and satisfaction above all else.",
+      "amazon_searchable": false,
+      "confidence_score": 0.8
+    },
+    {
+      "id": "object_longtermorientation_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Long-Term Orientation",
+      "type": "object",
+      "context": "A business philosophy discussed in the episode, emphasizing the importance of focusing on long-term growth and value creation rather than short-term gains.",
+      "amazon_searchable": false,
+      "confidence_score": 0.78
+    },
+    {
+      "id": "object_invention_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Invention",
+      "type": "object",
+      "context": "A key element of Bezos's business philosophy, highlighting the importance of continuous innovation and creating new products and services.",
+      "amazon_searchable": false,
+      "confidence_score": 0.82
+    },
+    {
+      "id": "person_patrickoshaughnessy_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Patrick O’Shaughnessy",
+      "type": "person",
+      "context": "Patrick O’Shaughnessy is a friend of the podcast host and invited the host to New York to record a conversation about focus and finding one's life's work.  He had recently listened to an episode featuring Todd Graves and was inspired to discuss the topic further.",
+      "amazon_searchable": false,
+      "confidence_score": 0.9
+    },
+    {
+      "id": "person_toddgraves_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Todd Graves",
+      "type": "person",
+      "context": "Todd Graves is mentioned as the subject of a previous podcast episode (\"#383 Todd Graves and his $10 Billion Chicken Finger Dream\") which inspired a conversation about focus and life's work.",
+      "amazon_searchable": false,
+      "confidence_score": 0.8
+    },
+    {
+      "id": "place_raisingcanes_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Raising Cane's",
+      "type": "place",
+      "context": "While not explicitly named, the context strongly implies that Todd Graves's \"$10 Billion Chicken Finger Dream\" refers to his company, Raising Cane's Chicken Fingers, a successful fast-food chain.",
+      "amazon_searchable": false,
+      "confidence_score": 0.75
+    },
+    {
+      "id": "media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Episode #383 \"Todd Graves and his $10 Billion Chicken Finger Dream\"",
+      "type": "media",
+      "context": "This is a previous podcast episode that served as inspiration for the current conversation. It features Todd Graves and his business journey.",
+      "amazon_searchable": false,
+      "confidence_score": 0.95
+    },
+    {
+      "id": "place_newyork_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "New York",
+      "type": "place",
+      "context": "The location where the podcast conversation was recorded.",
+      "amazon_searchable": false,
+      "confidence_score": 1
+    },
+    {
+      "id": "product_spotify_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Spotify",
+      "type": "product",
+      "context": "The podcast episode is available to watch on Spotify.",
+      "amazon_searchable": false,
+      "confidence_score": 0.9
+    },
+    {
+      "id": "product_youtube_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "YouTube",
+      "type": "product",
+      "context": "The podcast episode is available to watch on YouTube.",
+      "amazon_searchable": false,
+      "confidence_score": 0.9
+    },
+    {
+      "id": "product_ramp_ep_17561",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "name": "Ramp",
+      "type": "product",
+      "context": "Ramp is a financial operations platform mentioned in the podcast advertisement. It helps businesses control spending and optimize financial operations.",
+      "amazon_searchable": false,
+      "confidence_score": 0.8
+    }
+  ],
+  "all_relationships": [
+    {
+      "id": "rel_person_tamaramellon_ep_389_7_product_jimmychoo_ep_389_7_28065d5a",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "product_jimmychoo_ep_389_7",
+      "entity2_name": "Jimmy Choo",
+      "relationship_type": "founded",
+      "description": "Tamara Mellon founded the Jimmy Choo brand, playing a crucial role in its growth into a billion-dollar company.  She was instrumental in shaping the brand's identity and driving its success.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_jimmychoothecobbler_ep_389_7_person_tamaramellon_ep_389_7_4f5f20b0",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "person_jimmychoothecobbler_ep_389_7",
+      "entity2_name": "Jimmy Choo (the cobbler)",
+      "relationship_type": "partnered_with",
+      "description": "Tamara Mellon partnered with Jimmy Choo, the cobbler, to establish the Jimmy Choo brand. This partnership combined Mellon's business acumen with Choo's shoemaking expertise.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_inmyshoesamemoir_ep_389_7_person_tamaramellon_ep_389_7_1046a9c6",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_inmyshoesamemoir_ep_389_7",
+      "entity2_name": "In My Shoes: A Memoir",
+      "relationship_type": "wrote_book",
+      "description": "Tamara Mellon wrote the memoir \"In My Shoes\", which details her life and career, including the founding and growth of Jimmy Choo.",
+      "confidence_score": 0.98,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_vogue_ep_389_7_person_tamaramellon_ep_389_7_c7372e00",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_vogue_ep_389_7",
+      "entity2_name": "Vogue",
+      "relationship_type": "featured_in",
+      "description": "Tamara Mellon's wedding was photographed by Vogue, highlighting her connection to the fashion world and her public profile.",
+      "confidence_score": 0.8,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_vanityfair_ep_389_7_person_tamaramellon_ep_389_7_21611472",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_vanityfair_ep_389_7",
+      "entity2_name": "Vanity Fair",
+      "relationship_type": "featured_in",
+      "description": "Vanity Fair covered Tamara Mellon's divorce and subsequent criminal trial, showcasing the public interest in her life and career.",
+      "confidence_score": 0.75,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_thewallstreetjournal_ep_389_7_person_tamaramellon_ep_389_7_b7e45b8e",
+      "episode_id": "ep_389_77fb2124",
+      "entity1_id": "person_tamaramellon_ep_389_7",
+      "entity1_name": "Tamara Mellon",
+      "entity2_id": "media_thewallstreetjournal_ep_389_7",
+      "entity2_name": "The Wall Street Journal",
+      "relationship_type": "featured_in",
+      "description": "The Wall Street Journal reported on Tamara Mellon's business battles and takeover attempts, highlighting the business challenges she faced.",
+      "confidence_score": 0.7,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_jeffbezos_ep_388_f_place_amazon_ep_388_f_b7f036e9",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "place_amazon_ep_388_f",
+      "entity2_name": "Amazon",
+      "relationship_type": "founded",
+      "description": "Jeff Bezos founded the multinational technology company Amazon.",
+      "confidence_score": 0.99,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_shareholderletters_ep_388_f_person_jeffbezos_ep_388_f_a4bedb8d",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "media_shareholderletters_ep_388_f",
+      "entity2_name": "Shareholder Letters",
+      "relationship_type": "wrote_book",
+      "description": "Jeff Bezos wrote the shareholder letters that are compiled in the book 'Invent and Wander'.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f_person_jeffbezos_ep_388_f_8cd8f61f",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "person_jeffbezos_ep_388_f",
+      "entity1_name": "Jeff Bezos",
+      "entity2_id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+      "entity2_name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+      "relationship_type": "featured_in",
+      "description": "Jeff Bezos's writings are featured in the book 'Invent and Wander'.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_shareholderletters_ep_388_f_place_amazon_ep_388_f_9c88bfae",
+      "episode_id": "ep_388_f0429693",
+      "entity1_id": "media_shareholderletters_ep_388_f",
+      "entity1_name": "Shareholder Letters",
+      "entity2_id": "place_amazon_ep_388_f",
+      "entity2_name": "Amazon",
+      "relationship_type": "created_by",
+      "description": "The shareholder letters were created by Amazon and written by Jeff Bezos.",
+      "confidence_score": 0.9,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561_person_patrickoshaughnessy_ep_17561_50dacf60",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "entity1_id": "person_patrickoshaughnessy_ep_17561",
+      "entity1_name": "Patrick O’Shaughnessy",
+      "entity2_id": "media_episode383toddgravesandhis10billionchickenfingerdream_ep_17561",
+      "entity2_name": "Episode #383 \"Todd Graves and his $10 Billion Chicken Finger Dream\"",
+      "relationship_type": "listened_to",
+      "description": "Patrick O'Shaughnessy listened to the episode featuring Todd Graves, which inspired the current conversation.",
+      "confidence_score": 0.95,
+      "is_cross_episode": false
+    },
+    {
+      "id": "rel_person_toddgraves_ep_17561_place_raisingcanes_ep_17561_ea72b79a",
+      "episode_id": "ep_1756141094027_7dafd184",
+      "entity1_id": "person_toddgraves_ep_17561",
+      "entity1_name": "Todd Graves",
+      "entity2_id": "place_raisingcanes_ep_17561",
+      "entity2_name": "Raising Cane's",
+      "relationship_type": "founded",
+      "description": "Todd Graves is the founder of Raising Cane's Chicken Fingers.",
+      "confidence_score": 0.8,
+      "is_cross_episode": false
+    }
+  ],
+  "cross_episode_relationships": [
+    {
+      "id": "cross_ep_388_f0429693_ep_1756141094027_7dafd184",
+      "episode1_id": "ep_388_f0429693",
+      "episode1_title": "#388 Jeff Bezos's Shareholder Letters: All of Them!",
+      "episode2_id": "ep_1756141094027_7dafd184",
+      "episode2_title": "A conversation on focus and finding your life's work",
+      "shared_entities": [
+        "Ramp"
+      ],
+      "relationship_strength": 0.5,
+      "common_themes": [
+        "Product Development"
+      ]
+    }
+  ],
+  "amazon_products": [
+    {
+      "id": "product_jimmychoo_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Jimmy Choo",
+      "type": "product",
+      "context": "Jimmy Choo is a high-end shoe company founded by Tamara Mellon. It grew into a billion-dollar brand, known for its stylish and luxurious footwear. The brand's shoes were featured prominently in Sex and the City, further boosting its popularity and global recognition.  The podcast episode details Mellon's role in building the brand and the challenges she faced in the process.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Jimmy Choo shoes",
+        "Jimmy Choo heels",
+        "Jimmy Choo boots",
+        "Jimmy Choo handbags"
+      ],
+      "confidence_score": 0.9
+    },
+    {
+      "id": "media_inmyshoesamemoir_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "In My Shoes: A Memoir",
+      "type": "media",
+      "context": "This is Tamara Mellon's memoir, which details her life story, including her experiences founding Jimmy Choo and the challenges she faced along the way. The podcast episode is based on this book, summarizing its key events and insights. The book offers a personal account of her entrepreneurial journey, personal struggles, and business dealings.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "In My Shoes Tamara Mellon",
+        "Tamara Mellon Memoir",
+        "In My Shoes book",
+        "Tamara Mellon autobiography"
+      ],
+      "confidence_score": 0.85
+    },
+    {
+      "id": "media_vogue_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Vogue",
+      "type": "media",
+      "context": "Vogue is a fashion magazine that photographed Tamara Mellon's wedding, showcasing her personal life and connection to the fashion world.  This highlights her status and influence within the industry.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Vogue magazine",
+        "Vogue subscription",
+        "Vogue back issues"
+      ],
+      "confidence_score": 0.8
+    },
+    {
+      "id": "media_vanityfair_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Vanity Fair",
+      "type": "media",
+      "context": "Vanity Fair is a magazine that covered Tamara Mellon's divorce and subsequent criminal trial, demonstrating the public interest in her life and the high-profile nature of her experiences.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Vanity Fair magazine",
+        "Vanity Fair subscription"
+      ],
+      "confidence_score": 0.75
+    },
+    {
+      "id": "media_thewallstreetjournal_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "The Wall Street Journal",
+      "type": "media",
+      "context": "The Wall Street Journal reported on Tamara Mellon's battles with business conflicts and a hostile takeover attempt, highlighting the business aspects of her story and the challenges she faced in the corporate world.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Wall Street Journal subscription",
+        "WSJ digital access"
+      ],
+      "confidence_score": 0.7
+    },
+    {
+      "id": "media_sexandthecity_ep_389_7",
+      "episode_id": "ep_389_77fb2124",
+      "name": "Sex and the City",
+      "type": "media",
+      "context": "Jimmy Choo shoes were featured in Sex and the City, a popular TV show, significantly contributing to the brand's recognition and success. This illustrates the power of product placement and media exposure in building a brand.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Sex and the City DVD",
+        "Sex and the City Blu-ray",
+        "Sex and the City streaming"
+      ],
+      "confidence_score": 0.8
+    },
+    {
+      "id": "media_inventandwanderthecollectedwritingsofjeffbezos_ep_388_f",
+      "episode_id": "ep_388_f0429693",
+      "name": "Invent and Wander: The Collected Writings of Jeff Bezos",
+      "type": "media",
+      "context": "A book compiling Jeff Bezos's shareholder letters.  The podcast episode recommends reading these letters as a way to learn about building a successful internet business. The book is mentioned as a resource for listeners.",
+      "amazon_searchable": true,
+      "amazon_keywords": [
+        "Invent and Wander",
+        "Jeff Bezos book",
+        "Bezos shareholder letters",
+        "Amazon leadership"
+      ],
+      "confidence_score": 0.9
+    }
+  ],
+  "extraction_metadata": {
+    "total_episodes": 3,
+    "total_entities": 24,
+    "total_relationships": 12,
+    "models_used": [
+      "gemini"
+    ],
+    "extracted_at": "2025-08-25T18:18:05.152Z"
+  }
+}
