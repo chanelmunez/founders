@@ -132,8 +132,8 @@ class ComprehensiveEpisodeScraper {
     let cleaned = he.decode(text);
     
     // Remove script and style content
-    cleaned = cleaned.replace(/<script[^>]*>.*?<\/script>/gis, '');
-    cleaned = cleaned.replace(/<style[^>]*>.*?<\/style>/gis, '');
+    cleaned = cleaned.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+    cleaned = cleaned.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
     
     // Convert block elements to line breaks with space preservation
     const blockElements = [

@@ -1,9 +1,35 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as dotenv from 'dotenv';
-import { v4 as uuidv4 } from 'uuid';
+import * as crypto from 'crypto';
 
-dotenv.config({ path: '.env.local' });
+// Simple UUID function using crypto
+function generateUUID(): string {
+  return crypto.randomBytes(16).toString('hex');
+}
+
+// Load environment variables from .env.local manually
+try {
+  const envFile = fs.readFileSync('.env.local', 'utf-8');
+  envFile.split('\n').forEach(line => {
+    if (line.trim() && !line.startsWith('#')) {
+      let key, value;
+      if (line.includes('=')) {
+        const [k, ...valueParts] = line.split('=');
+        key = k.trim();
+        value = valueParts.join('=').trim();
+      } else if (line.includes(':')) {
+        const [k, ...valueParts] = line.split(':');
+        key = k.trim();
+        value = valueParts.join(':').trim();
+      }
+      if (key && value) {
+        process.env[key] = value;
+      }
+    }
+  });
+} catch (error) {
+  console.warn('No .env.local file found');
+}
 
 interface Episode {
   title: string;
@@ -99,7 +125,7 @@ class GraphEntityExtractor {
 
   private createRelationshipId(entity1Id: string, entity2Id: string): string {
     const sorted = [entity1Id, entity2Id].sort();
-    return `rel_${sorted[0]}_${sorted[1]}_${uuidv4().substring(0, 8)}`;
+    return `rel_${sorted[0]}_${sorted[1]}_${generateUUID().substring(0, 8)}`;
   }
 
   private async makeOpenAIRequest(text: string, episodeTitle: string): Promise<any> {
@@ -420,7 +446,7 @@ ${text.substring(0, 8000)}`;
   }
 
   async extractFromEpisode(episode: Episode, modelName: string): Promise<EpisodeData> {
-    const episodeId = `ep_${episode.episode_number || Date.now()}_${uuidv4().substring(0, 8)}`;
+    const episodeId = `ep_${episode.episode_number || Date.now()}_${generateUUID().substring(0, 8)}`;
     
     console.log(`Extracting entities from "${episode.title}" using ${modelName}...`);
     

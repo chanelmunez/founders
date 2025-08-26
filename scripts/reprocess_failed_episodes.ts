@@ -1,7 +1,21 @@
 #!/usr/bin/env node
 
 import * as fs from 'fs';
-import he from 'he';
+// Simple HTML entity decoder function
+function decodeHtmlEntities(text: string): string {
+  const entityMap: { [key: string]: string } = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'",
+    '&nbsp;': ' '
+  };
+  
+  return text.replace(/&[#\w]+;/g, (entity) => {
+    return entityMap[entity] || entity;
+  });
+}
 import { chromium } from 'playwright';
 
 interface Episode {
@@ -29,7 +43,7 @@ interface PodcastData {
 function cleanText(text: string | undefined): string {
   if (!text) return '';
   
-  const unescaped = he.decode(text);
+  const unescaped = decodeHtmlEntities(text);
   const cleaned = unescaped.replace(/\s+/g, ' ');
   return cleaned.trim();
 }

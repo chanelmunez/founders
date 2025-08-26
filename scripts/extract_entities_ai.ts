@@ -1,11 +1,36 @@
 #!/usr/bin/env node
 
 import * as fs from 'fs';
-import { v4 as uuidv4 } from 'uuid';
-import * as dotenv from 'dotenv';
+import * as crypto from 'crypto';
 
-// Load environment variables
-dotenv.config({ path: '.env.local' });
+// Simple UUID function using crypto
+function generateUUID(): string {
+  return crypto.randomBytes(16).toString('hex');
+}
+
+// Load environment variables from .env.local manually
+try {
+  const envFile = fs.readFileSync('.env.local', 'utf-8');
+  envFile.split('\n').forEach(line => {
+    if (line.trim() && !line.startsWith('#')) {
+      let key, value;
+      if (line.includes('=')) {
+        const [k, ...valueParts] = line.split('=');
+        key = k.trim();
+        value = valueParts.join('=').trim();
+      } else if (line.includes(':')) {
+        const [k, ...valueParts] = line.split(':');
+        key = k.trim();
+        value = valueParts.join(':').trim();
+      }
+      if (key && value) {
+        process.env[key] = value;
+      }
+    }
+  });
+} catch (error) {
+  console.warn('No .env.local file found');
+}
 
 interface Episode {
   title?: string;
@@ -68,20 +93,20 @@ class AIEntityExtractor {
   private anthropicApiKey: string;
 
   constructor() {
-    this.openaiApiKey = process.env.OPENAI_API_KEY || '';
-    this.anthropicApiKey = process.env.ANTHROPIC_API_KEY || '';
+    this.openaiApiKey = process.env.OPENAI_API_KEY || process.env.openai || '';
+    this.anthropicApiKey = process.env.ANTHROPIC_API_KEY || process.env.anthropic || '';
   }
 
   generateEpisodeId(episode: Episode): string {
-    return `ep_${episode.episode_number || 'bonus'}_${uuidv4().substring(0, 8)}`;
+    return `ep_${episode.episode_number || 'bonus'}_${generateUUID().substring(0, 8)}`;
   }
 
   generateEntityId(): string {
-    return `ent_ai_${uuidv4()}`;
+    return `ent_ai_${generateUUID()}`;
   }
 
   generateRelationshipId(): string {
-    return `rel_ai_${uuidv4()}`;
+    return `rel_ai_${generateUUID()}`;
   }
 
   // Create the prompt for AI entity extraction
@@ -351,8 +376,8 @@ async function processAllEpisodesWithAI() {
   
   // Check which AI models are available
   const availableModels: Array<'openai' | 'anthropic'> = [];
-  if (process.env.OPENAI_API_KEY) availableModels.push('openai');
-  if (process.env.ANTHROPIC_API_KEY) availableModels.push('anthropic');
+  if (process.env.OPENAI_API_KEY || process.env.openai) availableModels.push('openai');
+  if (process.env.ANTHROPIC_API_KEY || process.env.anthropic) availableModels.push('anthropic');
   
   if (availableModels.length === 0) {
     throw new Error('❌ No AI API keys found in .env.local. Please add OPENAI_API_KEY or ANTHROPIC_API_KEY');

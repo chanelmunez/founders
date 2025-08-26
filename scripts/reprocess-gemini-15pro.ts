@@ -94,7 +94,7 @@ class GeminiReprocessor {
   private episodesToReprocess: number[];
 
   constructor(episodesToReprocess: number[]) {
-    this.geminiApiKey = process.env.gemini || envConfig.gemini || '';
+    this.geminiApiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || process.env.gemini || envConfig.GEMINI_API_KEY || envConfig.GOOGLE_API_KEY || envConfig.gemini || '';
     this.episodesToReprocess = episodesToReprocess;
     
     console.log('🔑 Gemini API key found:', this.geminiApiKey ? 'Yes' : 'No');

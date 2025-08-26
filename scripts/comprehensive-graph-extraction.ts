@@ -90,10 +90,10 @@ class ComprehensiveGraphExtractor {
   private episodeLimit: number = 0;
 
   constructor(testMode: boolean = false, episodeLimit: number = 0) {
-    this.openaiApiKey = process.env.openai || '';
-    this.anthropicApiKey = process.env.anthropic || '';
-    this.groqApiKey = ''; // Removed due to rate limiting issues
-    this.geminiApiKey = process.env.gemini || '';
+    this.openaiApiKey = process.env.OPENAI_API_KEY || process.env.openai || '';
+    this.anthropicApiKey = process.env.ANTHROPIC_API_KEY || process.env.anthropic || '';
+    this.groqApiKey = process.env.GROQ_API_KEY || ''; // Removed due to rate limiting issues
+    this.geminiApiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || process.env.gemini || '';
     this.testMode = testMode;
     this.episodeLimit = episodeLimit;
   }
@@ -216,9 +216,9 @@ ${prompt}`
               let cleaned = content;
               
               // Remove common prefixes
-              cleaned = cleaned.replace(/^.*?(?=\{)/s, '');
+              cleaned = cleaned.replace(/^.*?(?=\{)/, '');
               // Remove common suffixes  
-              cleaned = cleaned.replace(/\}[^}]*$/s, '}');
+              cleaned = cleaned.replace(/\}[^}]*$/, '}');
               // Fix trailing commas
               cleaned = cleaned.replace(/,(\s*[}\]])/g, '$1');
               // Fix unescaped quotes in values

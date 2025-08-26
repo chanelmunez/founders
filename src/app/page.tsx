@@ -12,12 +12,16 @@ interface Entity {
   context: string
   episode_id: string
   confidence_score: number
+  amazon_searchable?: boolean
+  amazon_keywords?: string[]
 }
 
 interface Relationship {
   id: string
   episode_id: string
+  entity1_id?: string
   entity1_name: string
+  entity2_id?: string
   entity2_name: string
   relationship_type: string
   description: string

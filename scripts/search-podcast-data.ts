@@ -455,4 +455,5 @@ if (require.main === module) {
   main();
 }
 
-export { PodcastSearchEngine, SearchResult };
+export { PodcastSearchEngine };
+export type { SearchResult };
