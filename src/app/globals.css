@@ -48,7 +48,59 @@
   --border-medium: #cfcfcd;
   --border-dark: #9f9f9e;
   --border-accent: #e7e7e5;
-  
+}
+
+/* Amazon Products Grid Styling */
+.amazon-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.amazon-product {
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background: var(--bg-white);
+}
+
+.amazon-product:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 4px 12px rgba(0, 152, 207, 0.1);
+  transform: translateY(-2px);
+}
+
+.amazon-product-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+
+.amazon-thumbnail {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  background: var(--bg-secondary);
+}
+
+.amazon-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Additional CSS Variables */
+:root {
   /* Shadow Colors */
   --shadow-light: rgba(15, 15, 10, 0.1);
   --shadow-medium: rgba(15, 15, 10, 0.2);

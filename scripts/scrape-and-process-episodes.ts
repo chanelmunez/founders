@@ -180,6 +180,10 @@ class ComprehensiveEpisodeScraper {
     cleaned = cleaned.replace(/[ \t]+\n/g, '\n'); // Remove spaces before line breaks
     cleaned = cleaned.replace(/\n{3,}/g, '\n\n'); // Multiple line breaks to double
     
+    // Convert newlines to <br> tags for HTML display
+    cleaned = cleaned.replace(/\n{2,}/g, '<br>'); // Double newlines to <br>
+    cleaned = cleaned.replace(/\n/g, '<br>'); // Single newlines to <br>
+    
     // Ensure proper spacing between sentences and sections
     cleaned = cleaned.replace(/([.!?])([A-Z])/g, '$1 $2'); // Add space after sentence punctuation
     cleaned = cleaned.replace(/([a-z])([A-Z][a-z])/g, '$1 $2'); // Add space between camelCase-like text

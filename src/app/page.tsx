@@ -5,6 +5,12 @@ import episodesData from '../data-episodes-claude.json'
 import relationshipsData from '../data-relationships-claude.json'
 import episodesTextData from '../data-episodes-text.json'
 
+interface AmazonProduct {
+  url: string
+  title: string
+  thumbnail?: string
+}
+
 interface Entity {
   id: string
   name: string
@@ -14,6 +20,7 @@ interface Entity {
   confidence_score: number
   amazon_searchable?: boolean
   amazon_keywords?: string[]
+  amazon_products?: AmazonProduct[]
 }
 
 interface Relationship {
@@ -59,81 +66,37 @@ interface AmazonSearchResult {
   link_clean?: string
 }
 
-// Amazon Search Component
-function AmazonSearchComponent({ entity }: { entity: Entity }) {
-  const [amazonResult, setAmazonResult] = useState<AmazonSearchResult | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-
-  useEffect(() => {
-    const fetchAmazonResult = async () => {
-      // Check if entity should be searched on Amazon
-      if (!entity.amazon_searchable && entity.type !== 'media') {
-        return
-      }
-
-      setIsLoading(true)
-
-      try {
-        const searchQuery = entity.amazon_keywords?.join(' ') || entity.name
-        console.log('Searching Amazon for:', searchQuery, 'Entity:', entity.name, 'Type:', entity.type)
-        const response = await fetch(`/api/amazon-search?query=${encodeURIComponent(searchQuery)}`)
-        
-        if (!response.ok) {
-          console.error('Failed to search Amazon:', response.statusText)
-          return
-        }
-
-        const data = await response.json()
-        
-        if (data.organic_results && data.organic_results.length > 0) {
-          const firstResult = data.organic_results[0]
-          setAmazonResult({
-            title: firstResult.title,
-            thumbnail: firstResult.thumbnail,
-            link_clean: firstResult.link_clean || firstResult.link
-          })
-        }
-      } catch (error) {
-        console.error('Error searching Amazon:', error)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    fetchAmazonResult()
-  }, [entity.id, entity.amazon_searchable, entity.type, entity.amazon_keywords, entity.name])
-
-  // Don't render if entity shouldn't be searched
-  if (!entity.amazon_searchable && entity.type !== 'media') {
+// Static Amazon Products Component (no real-time search needed)
+function AmazonProductsComponent({ entity }: { entity: Entity }) {
+  // Don't render if entity has no Amazon products
+  if (!entity.amazon_products || entity.amazon_products.length === 0) {
     return null
   }
 
   return (
     <div className="modal-section">
       <h3 className="modal-section-title">Available on Amazon</h3>
-      {isLoading ? (
-        <div className="amazon-loading">Searching Amazon...</div>
-      ) : amazonResult ? (
-        <div className="amazon-result">
-          <a 
-            href={amazonResult.link_clean} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="amazon-result-link"
-          >
-            {amazonResult.thumbnail && (
-              <img 
-                src={amazonResult.thumbnail} 
-                alt={amazonResult.title}
-                className="amazon-thumbnail"
-              />
-            )}
-            <div className="amazon-title">{amazonResult.title}</div>
-          </a>
-        </div>
-      ) : (
-        <div className="amazon-not-found">No Amazon results found</div>
-      )}
+      <div className="amazon-products-grid">
+        {entity.amazon_products.map((product, index) => (
+          <div key={index} className="amazon-product">
+            <a 
+              href={product.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="amazon-product-link"
+            >
+              {product.thumbnail && (
+                <img 
+                  src={product.thumbnail} 
+                  alt={product.title}
+                  className="amazon-thumbnail"
+                />
+              )}
+              <div className="amazon-title">{product.title}</div>
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -146,12 +109,17 @@ export default function Home() {
   const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const [modalData, setModalData] = useState<ModalData>({ id: '', type: 'episode', isOpen: false })
   const [amazonSearchResults, setAmazonSearchResults] = useState<{ [entityId: string]: AmazonSearchResult }>({})
+  const [randomEpisodes, setRandomEpisodes] = useState<Episode[]>([])
 
   useEffect(() => {
     // Focus the search input when the page loads
     if (searchInputRef.current) {
       searchInputRef.current.focus()
     }
+    
+    // Set random episodes on client side to avoid hydration mismatch
+    const shuffled = [...episodesData.episodes].sort(() => 0.5 - Math.random())
+    setRandomEpisodes(shuffled.slice(0, 3))
   }, [])
 
   // Auto-search with debounce
@@ -423,7 +391,12 @@ export default function Home() {
     })
     
     const text = episodeText?.text || 'Full episode text not available.'
-    // Replace newlines with <br> tags for better paragraph formatting
+    
+    // If text already contains <br> tags (from new scraper), return as-is
+    // Otherwise, convert newlines to <br> tags for legacy data
+    if (text.includes('<br>')) {
+      return text
+    }
     return text.replace(/\n/g, '<br>')
   }
 
@@ -550,8 +523,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Amazon Search Result */}
-          <AmazonSearchComponent entity={entity} />
+          {/* Amazon Products (pre-fetched) */}
+          <AmazonProductsComponent entity={entity} />
 
           {/* Related Episodes */}
           {relatedItems.episodes.length > 0 && (
@@ -1051,7 +1024,7 @@ export default function Home() {
         </div>
       ) : (
         <div className="episodes-section">
-          {episodesData.episodes.slice(0, 5).map((episode: Episode) => {
+          {randomEpisodes.length > 0 ? randomEpisodes.map((episode: Episode) => {
             const description = extractDescription(episode)
             
             return (
@@ -1131,7 +1104,11 @@ export default function Home() {
                 </div>
               </div>
             )
-          })}
+          }) : (
+            <div className="loading-episodes">
+              Loading random episodes...
+            </div>
+          )}
         </div>
       )}
 
