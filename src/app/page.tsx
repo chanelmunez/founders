@@ -66,37 +66,117 @@ interface AmazonSearchResult {
   link_clean?: string
 }
 
-// Static Amazon Products Component (no real-time search needed)
+// Amazon Products Component with fallback search
 function AmazonProductsComponent({ entity }: { entity: Entity }) {
-  // Don't render if entity has no Amazon products
-  if (!entity.amazon_products || entity.amazon_products.length === 0) {
+  const [searchResults, setSearchResults] = useState<AmazonSearchResult[]>([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [hasSearched, setHasSearched] = useState(false)
+  
+  // Check if entity should have Amazon search
+  const shouldSearch = (entity.type === 'media' || entity.amazon_searchable) && 
+                      (!entity.amazon_products || entity.amazon_products.length === 0)
+  
+  useEffect(() => {
+    const performAmazonSearch = async () => {
+      if (isLoading) return
+      
+      setIsLoading(true)
+      setHasSearched(true)
+      
+      try {
+        const response = await fetch('/api/amazon-search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: entity.name })
+        })
+        
+        if (response.ok) {
+          const data = await response.json()
+          if (data.results && data.results.length > 0) {
+            setSearchResults(data.results.slice(0, 3)) // Top 3 results
+          }
+        }
+      } catch (error) {
+        console.error('Amazon search failed:', error)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    
+    if (shouldSearch && !hasSearched) {
+      performAmazonSearch()
+    }
+  }, [entity.id, entity.name, shouldSearch, hasSearched, isLoading])
+  
+  // Don't render if no products and shouldn't search
+  if (!entity.amazon_products?.length && !shouldSearch) {
+    return null
+  }
+  
+  // Don't render if should search but no results after searching
+  if (shouldSearch && hasSearched && !searchResults.length && !isLoading) {
     return null
   }
 
   return (
     <div className="modal-section">
       <h3 className="modal-section-title">Available on Amazon</h3>
-      <div className="amazon-products-grid">
-        {entity.amazon_products.map((product, index) => (
-          <div key={index} className="amazon-product">
-            <a 
-              href={product.url} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="amazon-product-link"
-            >
-              {product.thumbnail && (
-                <img 
-                  src={product.thumbnail} 
-                  alt={product.title}
-                  className="amazon-thumbnail"
-                />
-              )}
-              <div className="amazon-title">{product.title}</div>
-            </a>
-          </div>
-        ))}
-      </div>
+      
+      {isLoading && (
+        <div className="amazon-loading">
+          Searching Amazon...
+        </div>
+      )}
+      
+      {/* Show pre-stored products in grid layout */}
+      {entity.amazon_products && entity.amazon_products.length > 0 && (
+        <div className="amazon-products-grid">
+          {entity.amazon_products.map((product, index) => (
+            <div key={`stored-${index}`} className="amazon-product">
+              <a 
+                href={product.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="amazon-product-link"
+              >
+                {product.thumbnail && (
+                  <img 
+                    src={product.thumbnail} 
+                    alt={product.title}
+                    className="amazon-thumbnail"
+                  />
+                )}
+                <div className="amazon-title">{product.title}</div>
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
+      
+      {/* Show search results in horizontal layout */}
+      {searchResults.length > 0 && (
+        <div className="amazon-search-results">
+          {searchResults.map((result, index) => (
+            <div key={`search-${index}`} className="amazon-result">
+              <a 
+                href={result.link_clean} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="amazon-result-link"
+              >
+                {result.thumbnail && (
+                  <img 
+                    src={result.thumbnail} 
+                    alt={result.title}
+                    className="amazon-thumbnail"
+                  />
+                )}
+                <div className="amazon-title">{result.title}</div>
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
