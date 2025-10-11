@@ -58,3 +58,4 @@ Thumbs.db
 # Data directory - ignore all files but keep directory structure
 data/*
 !data/.gitkeep
+.env*
